@@ -22,9 +22,8 @@ const features = [
 ];
 
 const testimonials = [
-  { name: "Vince Martin", text: "They make five-star pancakes, and I've eaten at a lot of restaurants. They're so fluffy and delicious — the best I've ever had." },
-  { name: "Local Regular", text: "Eating at Carter's is like eating at a friend's house. The food is incredible and the people make you feel like family." },
-  { name: "Weekend Visitor", text: "We stopped for gas and stayed for the waffles. Now we drive an hour just to come back. This place is a hidden gem." },
+  { name: "Kathy B.", text: "Carter's General Store & Deli in Leesville, VA. was our first Harvest Host experience and it was lovely. Everything we hoped for when joining this group." },
+  { name: "Micheal D.", text: "Charming, 19th century country store reborn in downtown Leesville, VA! Fresh produce, old fashioned candies and soda (even sarsaparilla!), sandwiches, Waygu beef, hoop cheese and many more unique items. The owners are friendly and passionate and it feels like home when you walk in the door. Come by, sit a spell and visit (yes, there's ice cream)." },
 ];
 
 const Index = () => {
@@ -43,7 +42,7 @@ const Index = () => {
       <section className="relative bg-primary text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9Indvb2QiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTAgMzBINjAiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCBmaWxsPSJ1cmwoI3dvb2QpIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIi8+PC9zdmc+')] opacity-50" />
         <div className="container relative py-20 md:py-32 text-center">
-          <p className="text-secondary text-sm font-body uppercase tracking-widest mb-4">Est. 1879 · Lynch Station, Virginia</p>
+          <p className="text-secondary text-sm font-body uppercase tracking-widest mb-4">Est. 1880's · Lynch Station, Virginia</p>
           <h1 className="text-4xl md:text-6xl font-heading font-bold leading-tight mb-6 max-w-4xl mx-auto">
             Good food, good neighbors, and God's blessings
           </h1>
@@ -133,7 +132,7 @@ const Index = () => {
       {/* Testimonials */}
       <section className="container py-16">
         <h2 className="text-3xl font-heading font-bold text-center text-foreground mb-12">What Folks Are Saying</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {testimonials.map((t, i) => (
             <Card key={i} className="bg-card border-border">
               <CardContent className="p-6">
