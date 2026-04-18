@@ -68,7 +68,6 @@ const Index = () => {
             <a href={TEL} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors flex items-center gap-1.5">
               <Phone className="h-4 w-4" /> {PHONE}
             </a>
-            <ReservationDialog trigger={<Button size="sm">Reserve</Button>} />
           </div>
           <button className="md:hidden p-2" aria-label="Menu" onClick={() => setMobileOpen(!mobileOpen)}>
             {mobileOpen ? <X className="h-5 w-5" /> : <MenuIcon className="h-5 w-5" />}
@@ -83,7 +82,6 @@ const Index = () => {
                 </a>
               ))}
               <a href={TEL} className="py-1 text-sm font-medium flex items-center gap-2"><Phone className="h-4 w-4" /> {PHONE}</a>
-              <ReservationDialog trigger={<Button size="sm" className="w-full">Reserve a Table</Button>} />
             </div>
           </div>
         )}
@@ -107,21 +105,7 @@ const Index = () => {
           <p className="mt-5 text-base md:text-xl text-primary-foreground/85 max-w-2xl font-light">
             Family-crafted recipes, warm hospitality, and unforgettable flavors.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#menu"><Button size="lg" className="text-base">View Menu</Button></a>
-            <ReservationDialog
-              trigger={
-                <Button size="lg" variant="outline" className="text-base bg-transparent border-primary-foreground/70 text-primary-foreground hover:bg-primary-foreground hover:text-foreground">
-                  Reserve a Table
-                </Button>
-              }
-            />
-            <a href={TEL}>
-              <Button size="lg" variant="ghost" className="text-base text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
-                <Phone className="h-4 w-4" /> {PHONE}
-              </Button>
-            </a>
-          </div>
+          {/* Removed Reserve and View Menu buttons */}
         </div>
       </section>
 
@@ -191,9 +175,6 @@ const Index = () => {
                 <div className="p-5">
                   <h3 className="font-display text-xl font-semibold mb-2">{d.name}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-4">{d.desc}</p>
-                  <ReservationDialog
-                    trigger={<Button variant="link" className="p-0 h-auto text-primary">Reserve to taste →</Button>}
-                  />
                 </div>
               </Card>
             ))}
