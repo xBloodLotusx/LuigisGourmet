@@ -282,7 +282,6 @@ const Index = () => {
               ))}
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
-              <ReservationDialog trigger={<Button size="lg">Reserve a Table</Button>} />
               <a href={TEL}><Button size="lg" variant="outline"><Phone className="h-4 w-4" /> Call Now</Button></a>
             </div>
           </div>
@@ -308,14 +307,7 @@ const Index = () => {
             Tables fill quickly on weekends — reserve yours now.
           </p>
           <div className="mt-9 flex flex-wrap gap-3 justify-center">
-            <ReservationDialog
-              trigger={<Button size="lg" variant="secondary" className="text-base">Reserve a Table</Button>}
-            />
-            <a href="#menu">
-              <Button size="lg" variant="outline" className="text-base bg-transparent border-primary-foreground/70 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                View Menu
-              </Button>
-            </a>
+            {/* Reserve a Table and View Menu buttons removed as requested */}
             <a href={TEL}>
               <Button size="lg" variant="ghost" className="text-base text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
                 <Phone className="h-4 w-4" /> Call Now
